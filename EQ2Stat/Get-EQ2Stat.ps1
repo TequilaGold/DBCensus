@@ -10,7 +10,7 @@ all the members in your guild.
 Version: 1.0.0
 
 .parameter Stat
-Specifies the stat to list for each character
+Specifies the statistic to list for each character
 
 Examples include:
   stats.combat.resolve
@@ -30,7 +30,7 @@ set up your own service ID for free at:
   https://census.daybreakgames.com/#devSignup
 
 .parameter GuildId
-This is the ID number of your guild.  To find our your guild's 
+This is the Census ID number of your guild.  To find out your guild's 
 ID use the following link and use the number at the end of the
 returned URL (will be something like 3883992933):
 
@@ -76,7 +76,7 @@ the number at the end of the returned URL:
 .\Get-EQ2Stat.ps1 stat.combat.fervor -GuildId 9812938798 -Ranks @(0, 2, 3)
 
 .link
-https://www.eq2ad.com
+https://github.com/TequilaGold/DBCensus
 
 #>
 
