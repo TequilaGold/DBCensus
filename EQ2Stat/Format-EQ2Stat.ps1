@@ -5,6 +5,10 @@ Display formatted EQ2 stats for members of your guild.
 "Help .\Get-EQ2Stat.ps1" for more detailed usage and parameter information
 
 Version: 1.0.0
+
+.link
+https://github.com/TequilaGold/DBCensus
+
 #>
 
 [CmdletBinding(PositionalBinding=$false)]
@@ -18,7 +22,7 @@ param (
   [long[]]$ExtraIds = @()
   )
 
-# Call Get-EQ2Stat.pst passing through all parameters  
+# Call Get-EQ2Stat.ps1 passing through all parameters  
 $GuildName, $ServerName, $StatName, $NameValue = 
   .\Get-EQ2Stat.ps1 $Stat -ServiceId $ServiceId -GuildId $GuildId -Ranks $Ranks -InactiveAfter $InactiveAfter -ExtraIds $ExtraIds
 # Output formatted content 
