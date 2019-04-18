@@ -30,7 +30,7 @@ Census is Daybreak Game's free service that they offer their gaming communities 
 
 ### Limitations of the Census API
 
-* The Census API is that it will not return any data for characters that have their data hidden in their in-game character options.
+* The Census API will not return any data for characters that have their data hidden in their in-game character options.
 * Data for characters is usually only updated when a character zones or logs out.  Any changes done to stats (i.e. gear swapping) will not show up while the character is in the same zone.
 
 ## Community Census Websites
