@@ -1,10 +1,43 @@
 # EQ2Stat
 
-These PowerShell cmdlets will poll the EverQuest 2 Census database for a specific statistic and return a sorted list of values for all the members in your guild.
+These PowerShell cmdlets will poll the EverQuest 2 Census database for a specific statistic and return a sorted list of values for all the members in your guild.  There isn't a lot (or any) error checking in these scripts.  The default error messages returned by PowerShell are quite detailed and usually the problem will be incorrect parameter values or temporary disruption in the Census API availability.
 
 **Get-EQ2Stat.ps1** - This script will perform the Census API query using the defined parameters and return raw data values.  This script is most useful if you want to pipe the data to additional scripts or commands to convert the data to other, more useful formats.
 
 **Format-EQ2Stat.ps1** - This script calls Get-EQ2Stat.ps1 and returns a nicely formatted view of the data.
+
+## Sample Output
+```
+PS> .\Format-EQ2Stat.ps1 resists.noxious.effective
+
+Stat listing for Advocati Diaboli of Maj'Dul   
+                                               
+Character    resists.noxious.effective         
+---------    -------------------------         
+Makya        885,879.0                         
+Echoless     883,122.0                         
+Itsey        881,389.0                         
+Skorchyr     878,356.0                         
+Catronia     869,862.0                         
+Headbustaz   867,099.0                         
+Issolde      863,264.0                         
+Liev         860,500.0                         
+Sirbuffsalot 853,116.0                         
+Nizard       853,099.0                         
+Nerotica     844,093.0                         
+Zabimaruu    842,885.0                         
+Mindripper   841,725.0                         
+Deelat       840,474.0                         
+Jawlenz      840,292.0                         
+Dethstic     835,197.0                         
+Kuulei       829,648.0                         
+Shikanah     829,513.0                         
+Docdoyo      824,779.0                         
+Ladaa        823,125.0                         
+Ching        821,367.0                         
+Gigglicious  819,124.0                         
+Eleeviah (*) 812,191.0                         
+```
 
 ## Parameter: Stat
 Specifies the statistic to list for each character. Examples include:
@@ -48,7 +81,7 @@ should be as follows to include 3 extra characters:
 
     -ExtraIds @(92888192, 909012290, 929991999)
 
-To find out a character's ID use [EQ2U Character Search](https://u.eq2wire.com/soe/character_search) and copy the number at the end of the returned URL.  
+To find out a character's ID use [EQ2U Character Search](https://u.eq2wire.com/soe/character_search) and copy the number at the end of the returned URL.  Characters included with this parameter will have the (*) marker appended to their name in the output.
 
 # Outputs
 
