@@ -1,10 +1,10 @@
-# Documentation for Daybreak Census PowerShell Scripts
+# Documentation for EQ2 Census PowerShell Scripts
 
 ## What's Inside
 
-[EQ2Stat](https://github.com/TequilaGold/DBCensus/tree/master/EQ2Stat) - Ever wanted a sorted listing of a specific statistic for all the raiders in your guild?  EQ2Stat scripts let you do that with several options to filter based on guild, guild ranks, and last login date.  You can also add individual characters that may not be in guild or otherwise do not meet the normal criteria.
+[EQ2Stat](https://github.com/TequilaGold/DBCensus/tree/master/EQ2Stat) - Ever wanted a sorted listing of a specific statistic for all the raiders in your guild?  The EQ2Stat scripts let you do that with several options to filter based on guild, guild ranks, and last login date.  You can also add individual characters that may not be in guild or otherwise do not meet the normal criteria.
 
-## PowerShell Help
+## PowerShell Information
 
 These scripts were tested with the latest version of PowerShell Core (6.2) but should work with most versions of PowerShell back to version 3.0.  If you do not have PowerShell Core installed it can be downloaded from https://github.com/PowerShell/PowerShell.
 
@@ -27,6 +27,11 @@ $PSDefaultParameterValues.Add(@{ '*-EQ2Stat.ps1:ExtraIds' = @(123456789012) })
 ## Daybreak Census
 
 Census is Daybreak Game's free service that they offer their gaming communities to access a lot of in-game data from out-of-game applications.  If you are going to use any of these scripts more than a few times you'll need to [apply for a Census API Service Id](https://census.daybreakgames.com/#devSignup) and then use that value for the ServiceId parameter in all of the above scripts.  It's quick, easy and free.
+
+### Limitations of the Census API
+
+* The Census API is that it will not return any data for characters that have their data hidden in their in-game character options.
+* Data for characters is usually only updated when a character zones or logs out.  Any changes done to stats (i.e. gear swapping) will not show up while the character is in the same zone.
 
 ## Community Census Websites
 
