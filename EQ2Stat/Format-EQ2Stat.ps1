@@ -4,8 +4,6 @@ Display formatted EQ2 stats for members of your guild.
 
 "Help .\Get-EQ2Stat.ps1" for more detailed usage and parameter information
 
-Version: 1.0.0
-
 .link
 https://github.com/TequilaGold/DBCensus
 

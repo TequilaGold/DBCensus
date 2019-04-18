@@ -7,8 +7,6 @@ This powershell cmdlet will poll the EverQuest 2 census database
 for a specific statistic and return a sorted list of values for 
 all the members in your guild.
 
-Version: 1.0.0
-
 .parameter Stat
 Specifies the statistic to list for each character
 
