@@ -18,10 +18,10 @@ Then you can define default values for your parameters that will be set every ti
 
 ```PowerShell
 # Example default parameter defines
-$PSDefaultParameterValues.Add(@{ '*-EQ2Stat.ps1:ServiceId' = "YourServiceId" })
-$PSDefaultParameterValues.Add(@{ '*-EQ2Stat.ps1:GuildId' = 987654321 })
-$PSDefaultParameterValues.Add(@{ '*-EQ2Stat.ps1:Ranks' = @(0, 1, 3, 4) })
-$PSDefaultParameterValues.Add(@{ '*-EQ2Stat.ps1:ExtraIds' = @(123456789012) })
+$PSDefaultParameterValues.Add('*-EQ2Stat.ps1:ServiceId', "YourServiceId")
+$PSDefaultParameterValues.Add('*-EQ2Stat.ps1:GuildId', 987654321)
+$PSDefaultParameterValues.Add('*-EQ2Stat.ps1:Ranks', @(0, 1, 3, 4))
+$PSDefaultParameterValues.Add('*-EQ2Stat.ps1:ExtraIds', @(123456789012))
 ```
 
 ## Daybreak Census
